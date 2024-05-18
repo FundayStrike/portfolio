@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+	    body{
+		font-family: Consolas;
+	    }
+
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+                position: fixed;
+                top: 0;
+                width: 100%;
+		border-radius: 5px;
+            }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+	    
+	    .project-box{
+		border: 1px solid black;
+		border-radius: 10px;
+		padding-left: 10px;
+		width: 55%;
+	    }
+
+	    .project-box:hover{
+		background-color: #eee;
+		color: black;
+		cursor: pointer;
+	    }
+	    
+	    #nav-text:hover{
+		background-color: #333;
+		color: #f2f2f2;
+	    }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+	    <a id="nav-text">Bryan's Portfolio</a>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+	    <a href="participations.html">Participations</a>
+        </div>
+        <div style="margin-top: 50px; padding: 15px;">
+            <h1>Bryan Tan Boon Jun's Portfolio</h1>
+	    <h3 id="about"><u>About Me</u></h3>
+	    <p style="width: 80%";>
+		My name is Bryan, going by the alias of Funday (or FundayStrike) online.
+		I am currently a Junior College Year 2 student studying at Anderson Serangoon Junior College.
+		I take the subject combination of H2 Physics, H2 Computing, H2 Mathematics and H2 Economics.
+		I have participated in several hackathons and competitions throughout my computing journey. Here are some notable
+		participations:
+	    </p>
+	    <ul>
+		<li>Attained Silver at the National Olympiad of Informatics 2024</li>
+		<li>Attained 8th place in Cyberthon 2024</li>
+		<li>Participated in the Microsoft Imagine Cup 2023 Hackathon</li>
+		<li>Participated in Hacktoberfest 2023</li>
+	    </ul>
+	    <p style="width: 80%">
+		In addition, I have also immersed myself in a few volunteering projects such as the student-initiated
+		O-Levels Computing Booster Programme to teach Secondary 4 O-Level Computing students.
+	    </p>
+	    <h3 id="projects"><u>Projects</u></h3>
+	    <p>Here are some of my notable projects and collaborations:</p>
+	    <div class="project-box" onclick="window.location.href='https://github.com/computingtutorverygd/ByteBoostify'"/>
+		<h4>ByteBoostify</h4>
+		<p>
+		    >>> A web application to help O-Level Computing students brush up their fundamentals.
+		</p>
+	    </div><br>
+	    <div class="project-box" onclick="window.location.href='https://github.com/FundayStrike/MRT-Planner'"/>
+		<h4>MRT Planner</h4>
+		<p>
+		    >>> Plan MRT trips efficiently. Uses Dijkstra Algorithm to determine the shortest time to get from one MRT
+		    station to another.
+		</p>
+	    </div><br>
+	    <div class="project-box" onclick="window.location.href='https://github.com/FundayStrike/StudyManager'"/>
+		<h4>StudyManager</h4>
+		<p>
+		    >>> A web application which aims to effectively help students manage their studies through keeping track of
+		    assignments.
+		</p>
+	    </div><br>
+	    <div class="project-box" onclick="window.location.href='https://github.com/FundayStrike/SwiftVoyager'"/>
+		<h4>SwiftVoyager (BuildingBlocs23 June Conference Hackathon Project)</h4>
+		<p>
+		    >>> A web application which determines whether trip reviews are positive or negative, with the use of sentimental analysis.
+		</p>
+	    </div><br>
+	    <h3 id="contact"><u>Contact Me</u></h3>
+	    <p>You can contact me at any one of the following platforms:</p>
+	    <ul>
+		<li>Gmail: bryantan1862@gmail.com</li>
+		<li>Linkedin: <a href="https://www.linkedin.com/in/bryan-tan-523770277/">Bryan Tan</a></li>
+	    </ul>
+        </div>
+    </body>
+</html>
