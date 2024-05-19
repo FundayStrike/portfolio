@@ -5,8 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
+	    /* adding this for greater compatibility with older and newer browsers */
+	    @font-face {
+    		font-family: 'Consolas';
+    		src: url('path/to/consolas.woff2') format('woff2'),
+         	url('path/to/consolas.woff') format('woff');
+	    }
+		
 	    body{
-		font-family: Consolas;
+		font-family: 'Consolas', monospace;
 	    }
 
             .navbar {
