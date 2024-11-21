@@ -14,7 +14,48 @@
 		
 	    body{
 		font-family: 'Consolas', monospace;
+		font-size: 16px;
 	    }
+
+		#main-content{
+			margin-top: 50px;
+			padding: 15px;
+		}
+
+		#intro-text{
+			width: 80%;
+		}
+
+		#additional-intro-text{
+			width: 80%;
+		}
+
+		/* for smaller devices */
+		@media (max-width: 768px) {
+			body{
+				font-size: 8px;
+			}
+
+			#main-content{
+				margin-top: 15px;
+			}
+
+			#intro-text{
+				width: 95%;
+			}
+
+			#additional-intro-text{
+				width: 95%;
+			}
+
+			.project-box{
+				width: 90% !important; 
+			}
+
+			.navbar a {
+				padding: 8px 5px !important;
+			}
+		}
 
             .navbar {
                 overflow: hidden;
@@ -67,15 +108,14 @@
             <a href="#contact">Contact</a>
 	    <a href="participations.html">Participations</a>
         </div>
-        <div style="margin-top: 50px; padding: 15px;">
+        <div id="main-content">
             <h1>Bryan Tan Boon Jun's Portfolio</h1>
 	    <h3 id="about"><u>About Me</u></h3>
-	    <p style="width: 80%";>
-		My name is Bryan, going by the alias of Funday (or FundayStrike) online.
-		I am currently a Junior College Year 2 student studying at Anderson Serangoon Junior College.
-		I am taking the subject combination consisting of H2 Physics, H2 Computing, H2 Mathematics and H2 Economics.
-		I have participated in several hackathons and competitions throughout my computing journey. Here are some of my notable
-		participations:
+	    <p id="intro-text">
+		My name is Bryan, a computing enthusiast. I have dabbled in computing domains such as competitive programming, machine learning
+		and cybersecurity. I am currently a Junior College Year 2 student studying at Anderson Serangoon Junior College, taking up the subject
+		combination of H2 Physics, H2 Computing, H2 Mathematics and H2 Economics. Over the course of my computing journey, I took part
+		in numerous hackathons and competitions. Here are some of my notable participations:
 	    </p>
 	    <ul>
 		<li>Attained Silver at the National Olympiad of Informatics 2024</li>
@@ -83,9 +123,10 @@
 		<li>Made four pull requests during Hacktoberfest 2023</li>
 		<li>Attained Bronze at the Singapore Mathematical Olympiad 2024 (Open Section)</li>
 	    </ul>
-	    <p style="width: 80%">
+	    <p id="additional-intro-text">
 		In addition, I have also immersed myself in a few volunteering projects such as the student-initiated
-		O-Levels Computing Booster Programme to teach Secondary 4 O-Level Computing students.
+		O-Levels Computing Booster Programme to teach Secondary 4 O-Level Computing students and I was also part of my school's
+		ICT Champion programme to educate fellow schoolmates about current technologies.
 	    </p>
 	    <h3 id="projects"><u>Projects</u></h3>
 	    <p>Here are some of my notable projects and collaborations:</p>
@@ -119,7 +160,7 @@
 	    <p>You can contact me at any one of the following platforms:</p>
 	    <ul>
 		<li>Gmail: bryantan1862@gmail.com</li>
-		<li>Linkedin: <a href="https://www.linkedin.com/in/bryan-tan-boon-jun-523770277/">Bryan Tan</a></li>
+		<li>Linkedin: <a href="https://www.linkedin.com/in/bryan-tan-boon-jun-523770277/">Bryan Tan Boon Jun</a></li>
 		<li>GitHub: <a href="https://github.com/FundayStrike"/>FundayStrike</a></li>
 	    </ul>
         </div>
