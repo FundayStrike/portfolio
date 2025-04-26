@@ -1,0 +1,160 @@
+body{
+    background-color: #21272f;
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+h2{
+    font-family: Consolas, 'Courier New', monospace;
+    text-align: center;
+}
+
+h3{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+.nav-bar{
+    margin-bottom: 20px;
+}
+
+.project-title{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.links{
+    display: inline-block;
+}
+
+.header-link{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content-box{
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.project-box{
+    width: 70%;
+    margin-bottom: 25px;
+}
+
+.project-box:hover{
+    background-color: rgba(43, 49, 57, 0.8); 
+    transition: 0.4s;
+}
+
+.platform-link{
+    font-size: 17px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+img{
+    float: left;
+    height: 100px;
+    width: 200px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+svg{
+    height: 16px;
+    width: 16px;
+}
+
+#about-me{
+    width: 60%;
+}
+
+#display-projects{
+    width: 75%;
+}
+
+#contact-info{
+    text-align: center;
+    width: 40%;
+}
+
+@media only screen and (max-width: 1200px){ 
+    body{
+        font-size: 20px;
+    }
+
+    ul{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 45px;
+    }
+
+    h3{
+        font-size: 45px;
+    }
+
+    a{
+        font-size: 35px;
+    }
+
+    img{
+        margin-top: 50px;
+        padding-left: 30px;
+        height: 300px;
+        width: 600px;
+    }
+
+    svg{
+        height: 32px;
+        width: 32px;
+    }
+
+    .content-box{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+        margin-bottom: 100px;
+        border-radius: 12px;
+    }
+
+    .project-desc{
+        font-size: 30px;
+    }
+
+    .platform-link{
+        font-size: 20px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #about-me{
+        width: 85%;
+    }
+
+    #display-projects{
+        width: 85%;
+    }
+
+    .project-box{
+        width: 85%;
+    }
+
+    #contact-info{
+        width: 85%;
+    }
+}
