@@ -6,11 +6,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="nav-bar">
-            <h3>Bryan's Portfolio</h3>
-            <div class="links">
+            <a href="index.html" class="nav-logo-link">
+                <img src="images/bt_logo_without_background.svg" alt="Bryan Tan logo" class="nav-logo"/>
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="links" id="nav-links">
                 <a class="header-link" href="index.html">Home</a>
                 <a class="header-link" href="#display-projects">Projects</a>
                 <a class="header-link" href="https://fundaystrike.github.io/blog/">Blog</a>
@@ -21,7 +27,7 @@
             <p>Hi! I'm Bryan Tan Boon Jun, a graduate of Anderson Serangoon Junior College (ASRJC), currently serving as a full-time National
                 Serviceman in the Republic of Singapore Navy (RSN). I am a passionate computing enthusiast with experience across various
                 fields, including AI, cybersecurity and competitive programming. My passion for computing has led me to study the subject during my O-Levels and A-Levels. I take part in CTFs and coding contests weekly.<br/><br/>
-
+ 
                 Here are some of my achievements:
                 <ul>
                     <li>Attained Silver at the National Olympiad in Informatics 2024</li>
@@ -33,12 +39,12 @@
         <div class="content-box" id="display-projects">
             <h2><span style="color: #2566cb;">function</span> <span style="color: #dcdc94;">displayProjects</span><span style="color: #ffd710;">()</span>:</h2>
             <div class="content-box project-box">
-                <img src="images/mrt_planner_preview.PNG"/>
+                <img src="images/mrt_planner_preview.PNG" alt="MRT Planner preview"/>
                 <h3 class="project-title">MRT Planner</h3>
                 <p class="project-desc">Plan MRT trips efficiently. Uses Dijkstra Algorithm to determine the shortest time to get from one MRT station to another.</p>
             </div>
             <div class="content-box project-box">
-                <img src="images/byte_boostify_preview.PNG"/>
+                <img src="images/byte_boostify_preview.PNG" alt="ByteBoostify preview"/>
                 <h3 class="project-title">ByteBoostify</h3>
                 <p class="project-desc">A web application to help O-Level Computing students brush up their fundamentals.</p>
             </div>
@@ -46,7 +52,7 @@
         <div class="content-box" id="contact-info">
             <h2><span style="color: #2566cb;">function</span> <span style="color: #dcdc94;">contactInfo</span><span style="color: #ffd710;">()</span>:</h2>
             <h3 style="margin-top: 5px;">You can contact me at the following platforms:</h3>
-            <a class="platform-link" href="mailto:bryantan1862@gmail.com">
+            <a class="platform-link" href="/cdn-cgi/l/email-protection#8fedfdf6eee1fbeee1beb7b9bdcfe8e2eee6e3a1ece0e2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
                 </svg>&nbsp;&nbsp;&nbsp;&nbsp;Gmail
@@ -62,5 +68,13 @@
                 </svg>&nbsp;&nbsp;&nbsp;&nbsp;GitHub
             </a>
         </div>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+                hamburger.classList.toggle('active');
+            });
+        </script>
     </body>
 </html>
